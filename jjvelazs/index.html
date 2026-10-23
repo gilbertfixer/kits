@@ -5,53 +5,93 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <meta name="referrer" content="no-referrer">
-<title>Del chat al agente · Edición homenaje · No oficial</title>
+<title>Del chat al agente · Preparado para @jjvelazs</title>
 <style>
-@font-face{font-family:"Fraunces";src:url("fuentes/Fraunces-SemiBold.ttf");font-weight:600}
-@font-face{font-family:"Inter";src:url("fuentes/Inter-Regular.ttf");font-weight:400}
-@font-face{font-family:"Inter";src:url("fuentes/Inter-SemiBold.ttf");font-weight:600}
+@font-face{font-family:"Fraunces";src:url("fuentes/Fraunces-Var.woff2") format("woff2");font-weight:100 900;font-display:swap}
+@font-face{font-family:"Fraunces";src:url("fuentes/Fraunces-Italic-Var.woff2") format("woff2");font-weight:100 900;font-style:italic;font-display:swap}
+@font-face{font-family:"Cormorant";src:url("fuentes/Cormorant-Italic-Var.woff2") format("woff2");font-weight:300 700;font-style:italic;font-display:swap}
+@font-face{font-family:"Inter";src:url("fuentes/Inter-Regular.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Inter";src:url("fuentes/Inter-SemiBold.woff2") format("woff2");font-weight:600;font-display:swap}
+
 *{box-sizing:border-box}
-body{margin:0;background:#FAF6EF;color:#1f2633;font:400 17px/1.6 Inter,system-ui,sans-serif}
-header{background:#14213D;background-image:radial-gradient(rgba(255,255,255,.07) 1.2px,transparent 1.3px);background-size:22px 22px;color:#fff;padding:48px 24px 40px;border-bottom:8px solid #1B6F6A}
-.w{max-width:720px;margin:0 auto}
-.serie{font-weight:600;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#cfd5e0}
-.kick{margin-top:28px;font-weight:600;font-size:14px;letter-spacing:.18em;text-transform:uppercase;color:#E9A23B}
-h1{font:600 42px/1.1 Fraunces,Georgia,serif;margin:8px 0 14px}
-header p{color:#d5dae4;margin:0}
-main{padding:36px 24px 56px}
-h2{font:600 26px/1.2 Fraunces,Georgia,serif;color:#14213D;margin:0 0 12px}
-.btn{display:inline-block;background:#E9A23B;color:#14213D;font-weight:600;text-decoration:none;padding:14px 26px;border-radius:8px;margin:6px 0 4px}
-.card{background:#fff;border:1px solid #E4DED3;border-radius:10px;padding:24px 26px;margin:0 0 22px}
-.cred{border-left:4px solid #E9A23B}
-ul{padding-left:22px;margin:0} li{margin:0 0 6px} li::marker{color:#E9A23B}
-a{color:#1B6F6A} .sec a{font-weight:600}
-.small{font-size:14px;color:#4A5160}
-img{max-width:100%;height:auto;border-radius:8px;display:block;margin:0 0 20px}
-footer{font-size:13px;color:#4A5160;text-align:center;padding:0 24px 40px}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#FBF8F1;color:#23252B;font:400 17px/1.65 Inter,system-ui,-apple-system,sans-serif}
+a{color:inherit}
+.hero{position:relative;color:#F5EFE3;text-align:center;padding:clamp(56px,9vw,104px) 22px clamp(150px,22vw,260px);
+ background:radial-gradient(120% 90% at 50% 0%,#1E2536 0%,#10141F 62%,#0A0D15 100%)}
+.hero:before{content:"";position:absolute;inset:clamp(10px,2vw,22px);border:1px solid rgba(205,176,124,.55);pointer-events:none}
+.w{max-width:760px;margin:0 auto;position:relative}
+.top{font:600 11px Inter;letter-spacing:.34em;text-transform:uppercase;color:#CDB07C}
+.mono{display:block;margin:26px auto 18px;width:84px;height:84px}
+.para{font:600 12px Inter;letter-spacing:.4em;text-transform:uppercase;color:#CDB07C}
+.name{font:italic 500 clamp(30px,5vw,44px)/1.15 Cormorant,Georgia,serif;margin:6px 0 2px}
+.handle{font-size:14px;letter-spacing:.14em;color:#B9B3A6}
+.orn{display:flex;justify-content:center;align-items:center;gap:12px;margin:26px 0;color:#B08D57;font-size:9px}
+.orn i{width:90px;height:1px;background:#B08D57;display:block} .orn b{display:block;width:6px;height:6px;background:#B08D57;transform:rotate(45deg)}
+.kick{font:600 12px Inter;letter-spacing:.34em;text-transform:uppercase;color:#CDB07C}
+h1{font-family:Fraunces,Georgia,serif;font-weight:300;font-size:clamp(42px,8vw,80px);line-height:1.02;letter-spacing:-.015em;font-variation-settings:"opsz" 144,"SOFT" 30;margin:12px 0 18px;color:#FFFDF8}
+.sub{font:italic 400 clamp(20px,2.6vw,25px)/1.45 Cormorant,Georgia,serif;color:#D9D2C3;max-width:620px;margin:0 auto}
+.date{margin-top:26px;font-size:12px;letter-spacing:.22em;text-transform:uppercase}
+.ded{font:italic 500 21px Cormorant,Georgia,serif;color:#CDB07C;margin-top:6px}
+.pv{max-width:980px;margin:clamp(-230px,-19vw,-120px) auto 0;padding:0 18px;position:relative}
+.pv img{width:100%;height:auto;display:block;box-shadow:0 40px 80px rgba(16,20,31,.28),0 6px 18px rgba(16,20,31,.14)}
+main{padding:clamp(40px,6vw,72px) 22px 40px}
+.cta{text-align:center;margin:0 auto 56px}
+.gift{font:600 12px Inter;letter-spacing:.34em;text-transform:uppercase;color:#B08D57}
+.cta p{font:italic 500 24px/1.4 Cormorant,Georgia,serif;color:#10141F;margin:8px 0 26px}
+.btn{display:inline-block;background:#10141F;color:#F5EFE3;text-decoration:none;font:600 15px Inter;letter-spacing:.16em;text-transform:uppercase;padding:20px 42px;border:1px solid #10141F;box-shadow:inset 0 0 0 4px #10141F,inset 0 0 0 5px #B08D57}
+.btn:hover,.btn:focus{background:#232B40}
+.btn small{display:block;font:400 11px Inter;letter-spacing:.2em;color:#CDB07C;margin-top:4px}
+.sec{display:inline-block;margin-top:18px;font-size:15px;letter-spacing:.06em;color:#10141F;text-decoration:none;border-bottom:1px solid #B08D57;padding-bottom:2px}
+h2{font:400 clamp(26px,3.4vw,32px)/1.15 Fraunces,Georgia,serif;color:#10141F;margin:0 0 18px}
+.lab{font:600 11px Inter;letter-spacing:.32em;text-transform:uppercase;color:#B08D57;margin-bottom:6px}
+.block{border-top:1px solid #B08D57;padding:30px 0 10px;margin:0 0 30px}
+ul.inc{list-style:none;padding:0;margin:0}
+ul.inc li{display:flex;gap:18px;padding:14px 0;border-bottom:1px solid #DED4C1}
+ul.inc .n{font:italic 300 24px/1 Fraunces,Georgia,serif;color:#B08D57;min-width:34px}
+.cred p{margin:0 0 14px}
+.cred .src{font-weight:600;text-decoration:none;border-bottom:1px solid #B08D57}
+.small{font-size:14px;color:#6E6A62}
+footer{text-align:center;padding:10px 22px 56px;color:#6E6A62;font-size:13px;letter-spacing:.04em}
+footer .sg{font:italic 500 20px Cormorant,Georgia,serif;color:#B08D57;margin-bottom:6px}
+@media (max-width:560px){body{font-size:16px} .btn{display:block;padding:18px 20px} .orn i{width:56px}}
 </style>
 </head>
 <body>
-<header><div class="w">
-<div class="serie">Edición homenaje · No oficial</div>
-<div class="kick">Tu kit está listo</div>
+<header class="hero"><div class="w">
+<div class="top">Edición privada · Pieza única</div>
+<svg class="mono" width="84" height="84" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<circle cx="50" cy="50" r="47" fill="none" stroke="#CDB07C" stroke-width="1"/>
+<circle cx="50" cy="50" r="42.5" fill="none" stroke="#CDB07C" stroke-width=".5"/>
+<path d="M50 3.5 L52 7.5 L50 11.5 L48 7.5Z M50 88.5 L52 92.5 L50 96.5 L48 92.5Z" fill="#CDB07C"/>
+<text x="50" y="50" dy=".35em" text-anchor="middle" font-family="Fraunces" font-style="italic" font-weight="400" font-size="31" fill="#CDB07C" letter-spacing="1">JV</text>
+</svg>
+<div class="para">Preparado para</div>
+<div class="name">JJ Velaz</div>
+<div class="handle">@jjvelazs</div>
+<div class="orn"><i></i><b></b><i></i></div>
+<div class="kick">IA en la empresa</div>
 <h1>Del chat al agente</h1>
-<p>Cómo pasar de usar la IA para buscar y redactar correos a delegarle tareas enteras de tu negocio, con una persona siempre a mano cuando hace falta.</p>
+<p class="sub">Cómo pasar de usar la IA para buscar y redactar correos a delegarle tareas enteras de tu negocio, con una persona siempre a mano cuando hace falta.</p>
+<div class="date">Basado en tu post del 19 de octubre de 2026</div>
+<div class="ded">Hecho a mano para ti por Gilbert Cruz · @CruzBuilds</div>
 </div></header>
+<div class="pv"><img src="preview.png" alt="Del chat al agente" width="1600" height="900"></div>
 <main><div class="w">
-<img src="preview.png" alt="Del chat al agente" width="1200" height="675">
-<div class="card">
-<h2>Qué incluye</h2>
-<ul><li>PDF (5 páginas): el camino de la fase 1 (asistente) a la fase 2 (agente) en 6 pasos</li><li>Ficha de tarea delegable con regla de escalado a una persona</li><li>Checklist antes de soltar un agente y ejemplo práctico (ficticio)</li><li>Prompt «detector de tareas delegables» para tu IA</li></ul>
-<p><a class="btn" href="kit-del-chat-al-agente.pdf" download>Descargar el PDF</a></p>
-<p class="sec"><a href="prompt.md">Ver el prompt de IA (prompt.md)</a></p>
+<div class="cta">
+<div class="gift">Un regalo para ti</div>
+<p>Hecho a mano para ti, a partir de tu post del 19 de octubre de 2026.</p>
+<a class="btn" href="kit-del-chat-al-agente.pdf" download>Descargar el PDF<small>PDF · 5 páginas · A4</small></a><br>
+<a class="sec" href="prompt.md">Abrir el prompt de IA →</a>
 </div>
-<div class="card cred">
-<h2>Todo el mérito es de JJ Velaz (@jjvelazs)</h2>
+<section class="block"><div class="lab">Qué incluye</div><ul class="inc"><li><span class="n">01</span><span>PDF (5 páginas): el camino de la fase 1 (asistente) a la fase 2 (agente) en 6 pasos</span></li><li><span class="n">02</span><span>Ficha de tarea delegable con regla de escalado a una persona</span></li><li><span class="n">03</span><span>Checklist antes de soltar un agente y ejemplo práctico (ficticio)</span></li><li><span class="n">04</span><span>Prompt «detector de tareas delegables» para tu IA</span></li></ul></section>
+<section class="block cred"><div class="lab">Crédito y aviso</div>
+<h2>Todo el mérito es de JJ Velaz · @jjvelazs</h2>
 <p>La idea de las dos fases de la implantación de IA en empresas —y de escalar a una persona cuando sea necesario— viene de una publicación de JJ Velaz en X. Esto es una ampliación gratuita y no oficial; todo el mérito de la idea original es suyo.</p>
-<p class="sec"><a href="https://x.com/jjvelazs/status/2112080719723811144" rel="noopener noreferrer">Leer la publicación original en X</a></p>
-<p class="small">Homenaje no oficial, no revisado ni respaldado por el creador. Gratis, no se vende. Los ejemplos son ficticios y no se prometen resultados.</p>
-</div>
+<p><a class="src" href="https://x.com/jjvelazs/status/2112080719723811144" rel="noopener noreferrer">Leer el post original en X ↗</a></p>
+<p class="small">Homenaje no oficial, no revisado ni respaldado por el creador. Gratis, no se vende. Los ejemplos son ficticios y no se prometen resultados. Si quieres cambios o que lo retire, se hace sin preguntas.</p>
+</section>
 </div></main>
-<footer>Síntesis original preparada por Gilbert Cruz · Octubre 2026</footer>
+<footer><div class="sg">Hecho a mano para ti por Gilbert Cruz · @CruzBuilds</div>Síntesis original de Gilbert Cruz · @CruzBuilds · Octubre 2026</footer>
 </body>
 </html>
